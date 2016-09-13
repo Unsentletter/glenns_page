@@ -19,31 +19,3 @@
  * {
    margin: 0;
  }
- html, body {
-   height: 100%;
- }
- .page-wrap {
-   min-height: 100%;
-   /* equal to footer height */
-   margin-bottom: -42px;
- }
- .page-wrap:after {
-   content: "";
-   display: block;
- }
- .site-footer, .page-wrap:after {
-   height: 42px;
- }
- .site-footer {
-  // background: transparent;
-  opacity: 0.1;
- }
-
-.mainphoto {
-  height: calc(100vh - 42px);
-  width: 100vw;
-  background: url("http://www.shellharbour.nsw.gov.au/Images/Image-sliders/Pools-Gallery/Pools-oak-flats.aspx") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-}
