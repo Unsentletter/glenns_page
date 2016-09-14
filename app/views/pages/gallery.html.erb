@@ -1,68 +1,28 @@
 
 <div id="wrapper">
     <h1>Gallery</h1>
-        <a href="http://i.dailymail.co.uk/i/pix/2014/04/27/article-2614325-1D5EEC9E00000578-158_634x471.jpg" class="lightbox_trigger" >
-          <img style="width: 200px; height: auto;" src="http://i.dailymail.co.uk/i/pix/2014/04/27/article-2614325-1D5EEC9E00000578-158_634x471.jpg">
+        <a href="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg" class="lightbox_trigger" >
+          <img style="width: 200px; height: auto;" src="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg">
         </a>
-        <a href="http://i.dailymail.co.uk/i/pix/2014/04/27/article-2614325-1D5EEB4500000578-855_634x407.jpg" class="lightbox_trigger">
-          <img style="width: 200px; height: auto;" src="http://i.dailymail.co.uk/i/pix/2014/04/27/article-2614325-1D5EEB4500000578-855_634x407.jpg">
+        <a href="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg" class="lightbox_trigger" >
+          <img style="width: 200px; height: auto;" src="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg">
         </a>
-        <a href="http://static.pulse.ng/img/incoming/origs4694228/8070486772-w980-h640/Gay-Men-Kissing.jpg" class="lightbox_trigger">
-          <img style="width: 200px; height: auto;" src="http://static.pulse.ng/img/incoming/origs4694228/8070486772-w980-h640/Gay-Men-Kissing.jpg">
+        <a href="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg" class="lightbox_trigger" >
+          <img style="width: 200px; height: auto;" src="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg">
         </a>
+        <a href="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg" class="lightbox_trigger" >
+          <img style="width: 200px; height: auto;" src="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg">
+        </a>
+        <a href="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg" class="lightbox_trigger" >
+          <img style="width: 200px; height: auto;" src="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg">
+        </a>
+        <a href="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg" class="lightbox_trigger" >
+          <img style="width: 200px; height: auto;" src="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg">
+        </a>
+        <a href="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg" class="lightbox_trigger" >
+          <img style="width: 200px; height: auto;" src="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg">
+        </a>
+
 </div> <!-- #/wrapper -->
 
 <script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
-
-<script>
-jQuery(document).ready(function($) {
-
-	$('.lightbox_trigger').click(function(e) {
-
-		//prevent default action (hyperlink)
-		e.preventDefault();
-
-		//Get clicked link href
-		var image_href = $(this).attr("href");
-
-		/*
-		If the lightbox window HTML already exists in document,
-		change the img src to to match the href of whatever link was clicked
-
-		If the lightbox window HTML doesn't exists, create it and insert it.
-		(This will only happen the first time around)
-		*/
-
-		if ($('#lightbox').length > 0) { // #lightbox exists
-
-			//place href as img src value
-			$('#content').html('<img src="' + image_href + '" />');
-
-			//show lightbox window - you could use .show('fast') for a transition
-			$('#lightbox').show();
-		}
-
-		else { //#lightbox does not exist - create and insert (runs 1st time only)
-
-			//create HTML markup for lightbox window
-			var lightbox =
-			'<div id="lightbox">' +
-				'<p>Click to close</p>' +
-				'<div id="content">' + //insert clicked link's href into img src
-					'<img src="' + image_href +'" />' +
-				'</div>' +
-			'</div>';
-
-			//insert lightbox HTML into page
-			$('body').append(lightbox);
-		}
-
-	});
-
-	//Click anywhere on the page to get rid of lightbox window
-	$('#lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
-		$('#lightbox').hide();
-	});
-
-});
-</script>
