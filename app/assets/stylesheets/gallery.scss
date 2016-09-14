@@ -1,4 +1,20 @@
+// FLEXBOX
 
-#wrapper {
-  margin-top: 100px;
+.flex-container {
+  padding-left: 100px;
+  padding-right: 100px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+
+}
+.flex-item {
+  flex: 0 0 auto;
+  margin-right: 10px;
+  margin-top: 10px;
 }
