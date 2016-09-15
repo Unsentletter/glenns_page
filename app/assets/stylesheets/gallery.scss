@@ -1,8 +1,8 @@
 // FLEXBOX
 
 .flex-container {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -11,10 +11,46 @@
 
   -webkit-flex-flow: row wrap;
   justify-content: center;
+  padding-top: 10px;
 
 }
 .flex-item {
   flex: 0 0 auto;
   margin-right: 10px;
   margin-top: 10px;
+}
+.allgallery {
+  padding-top: 50px;
+}
+.flex-item img {
+
+}
+
+@media (max-width: 500px) {
+
+  .allgallery {
+    padding-top: 8%;
+  }
+  .flex-container {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: column wrap;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  .flex-item {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+
+
 }
